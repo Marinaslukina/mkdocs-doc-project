@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+Привет!  
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Я – технический писатель со стажем работы более 5 лет. Обладаю опытом создания и поддержки программной документации более года. Умею структурировать информацию и писать просто о сложном. За 1,5 года разработала 5+ руководств пользователя, актуализировала контент в условиях быстро меняющегося продукта, взаимодействовала с разработчиками, аналитиками, PM для точного отображения функционала в документации.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Мною была оптимизирована работа технических писателей путем внедрения метода автоматизированного создания документов, а также разработан ГОСТовский шаблон на языке разметки tex.
