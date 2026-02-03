@@ -49,6 +49,7 @@ nav: # Структура сайта
 - Примеры текстов:
   - Главная страница: pet-project/index.md
   - Пример 1: pet-project/your-github-login-instruction.md
+  - Пример 2: pet-project/notsapp.md
 - Контакты: contacts.md
 # - Домашний проект:
   # - pet-project/index.md # корневая страница подраздела; работает при включенной функции navigation.indexes
