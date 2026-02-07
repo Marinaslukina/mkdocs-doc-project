@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Общие стили и переходы
+   ========================================================================== */
+
+/* Плавные переходы для смены темы */
+:root, [data-md-color-scheme] {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* Плавные переходы для всех элементов */
+*, *::before, *::after {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* Анимация для кнопки переключения темы */
+.md-toggle {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.md-toggle:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   СВЕТЛАЯ ТЕМА (default) - Утреннее небо
+   ========================================================================== */
+
+[data-md-color-scheme="default"] {
+    /* Основные цвета */
+    --md-primary-fg-color: #8b5cf6;        /* Яркий фиолетовый */
+    --md-primary-fg-color--light: #a78bfa; /* Светлее */
+    --md-primary-fg-color--dark: #7c3aed;  /* Темнее */
+    
+    /* Акцентные цвета */
+    --md-accent-fg-color: #10b981;         /* Изумрудный */
+    --md-accent-fg-color--transparent: rgba(16, 185, 129, 0.1);
+    
+    /* Фоны */
+    --md-default-bg-color: #f8fafc;        /* Светло-серый с голубым оттенком */
+    --md-default-bg-color--light: #ffffff;
+    --md-default-bg-color--lighter: #f0f9ff;
+    --md-default-bg-color--lightest: #e0f2fe;
+    
+    /* Текст */
+    --md-default-fg-color: #1e293b;        /* Темно-синий - основной текст */
+    --md-default-fg-color--light: #334155; /* Для заголовков h2, h3 */
+    --md-default-fg-color--lighter: #475569; /* Для обычного текста */
+    --md-default-fg-color--lightest: #64748b; /* Второстепенный текст */
+    
+    /* Ссылки */
+    --md-typeset-a-color: #059669;         /* Зеленые ссылки */
+    --md-typeset-a-color--hover: #10b981;  /* При наведении */
+    --md-typeset-a-color--visited: #047857; /* Посещенные */
+    
+    /* Код */
+    --md-code-bg-color: #ffffff;
+    --md-code-fg-color: #1e293b;
+    --md-code-hl-color: #dcfce7;           /* Светло-зеленая подсветка */
+    --md-code-hl-number-color: #dc2626;    /* Красные числа */
+    --md-code-hl-string-color: #16a34a;    /* Зеленые строки */
+    --md-code-hl-keyword-color: #7c3aed;   /* Фиолетовые ключевые слова */
+    --md-code-hl-function-color: #2563eb;  /* Синие функции */
+    --md-code-hl-comment-color: #64748b;   /* Серые комментарии */
+    --md-code-hl-constant-color: #ea580c;  /* Оранжевые константы */
+    
+    /* Таблицы */
+    --md-table-bg-color: #ffffff;
+    --md-table-fg-color: #1e293b;
+    --md-table-bg-color--even: #f8fafc;
+    --md-table-bg-color--hover: #f0f9ff;
+    
+    /* Подсветка синтаксиса */
+    --md-code-hl-color: rgba(16, 185, 129, 0.1);
+    --md-code-hl-operator-color: #7c3aed;
+    --md-code-hl-punctuation-color: #64748b;
+    
+    /* Предупреждения и заметки */
+    --md-admonition-fg-color: #1e293b;
+    --md-admonition-bg-color: #ffffff;
+    
+    /* Подвал */
+    --md-footer-bg-color: #1e293b;
+    --md-footer-fg-color: #f8fafc;
+    --md-footer-bg-color--dark: #0f172a;
+    
+    /* Тени и границы */
+    box-shadow: 0 1px 3px rgba(139, 92, 246, 0.1);
+    --md-shadow-z1: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --md-shadow-z2: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   ТЕМНАЯ ТЕМА (slate) - Космическая
+   ========================================================================== */
+
+[data-md-color-scheme="slate"] {
+    /* Планетарные цвета */
+    --md-primary-fg-color: #8a2be2;        /* Фиолетовый - космос */
+    --md-primary-fg-color--light: #9d4edd; /* Светлее */
+    --md-primary-fg-color--dark: #7b2cbf;  /* Темнее */
+    
+    /* Акцентные цвета */
+    --md-accent-fg-color: #00ff88;         /* Неоново-зеленый */
+    --md-accent-fg-color--transparent: rgba(0, 255, 136, 0.1);
+    
+    /* Глубокий космос */
+    --md-default-bg-color: #0a0a1a;        /* Темно-синий с фиолетовым оттенком */
+    --md-default-bg-color--light: #151530;
+    --md-default-bg-color--lighter: #202045;
+    --md-default-bg-color--lightest: #2a2a5a;
+    
+    /* Звездный свет */
+    --md-default-fg-color: #e6e6ff;        /* Светло-фиолетовый текст */
+    --md-default-fg-color--light: #b8b8ff;
+    --md-default-fg-color--lighter: #8a8acc;
+    --md-default-fg-color--lightest: #6b6ba3;
+    
+    /* ссылки */
+    --md-typeset-a-color: #00ff88;         /* Неоново-зеленый */
+    --md-typeset-a-color--hover: #88ffc2;  /* Светлее при наведении */
+    --md-typeset-a-color--visited: #00cc6a; /* Посещенные */
+    
+    /* Блоки кода как терминалы */
+    --md-code-bg-color: #151530;
+    --md-code-fg-color: #00ff88;
+    --md-code-hl-color: rgba(0, 255, 136, 0.15); /* Неоновая подсветка */
+    
+    /* Дополнительные акценты */
+    --md-code-hl-number-color: #ff6bcb;    /* Розовые числа */
+    --md-code-hl-string-color: #ffd166;    /* Желтые строки */
+    --md-code-hl-keyword-color: #9d4edd;   /* Фиолетовые ключевые слова */
+    --md-code-hl-function-color: #4cc9f0;  /* Голубые функции */
+    --md-code-hl-comment-color: #8a8acc;   /* Серо-фиолетовые комментарии */
+    --md-code-hl-constant-color: #ff9100;  /* Оранжевые константы */
+    
+    /* Таблицы */
+    --md-table-bg-color: #151530;
+    --md-table-fg-color: #e6e6ff;
+    --md-table-bg-color--even: #0f0f25;
+    --md-table-bg-color--hover: #202045;
+    
+    /* Подсветка синтаксиса */
+    --md-code-hl-operator-color: #9d4edd;
+    --md-code-hl-punctuation-color: #8a8acc;
+    
+    /* Предупреждения и заметки */
+    --md-admonition-fg-color: #e6e6ff;
+    --md-admonition-bg-color: #151530;
+    
+    /* Подвал */
+    --md-footer-bg-color: #050510;
+    --md-footer-fg-color: #b8b8ff;
+    --md-footer-bg-color--dark: #030305;
+    
+    /* Космические тени */
+    --md-shadow-z1: 0 1px 3px rgba(0, 255, 136, 0.1);
+    --md-shadow-z2: 0 4px 6px rgba(138, 43, 226, 0.2);
+}
+
+/* ==========================================================================
+   Дополнительные улучшения
+   ========================================================================== */
+
+/* Плавное появление элементов */
+.md-content {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.md-typeset {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                 Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.011em;
+}
+
+/* Для заголовков */
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.022em;
+}
+
+/* Для кода */
+.md-typeset code, .md-typeset pre {
+    font-family: 'JetBrains Mono', 'Roboto Mono', 'SF Mono', 
+                 Monaco, 'Cascadia Code', monospace;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+/* Улучшенные ссылки */
+.md-typeset a {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.md-typeset a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--md-typeset-a-color--hover);
+    text-underline-offset: 0.2em;
+}
+
+/* Стили для кнопок */
+.md-button {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--md-shadow-z2);
+}
+
+/* Адаптивные тени для карточек */
+.md-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.md-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--md-shadow-z2);
+}
+
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--md-default-bg-color--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--md-primary-fg-color--light);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--md-primary-fg-color);
+}
+
+/* Плавное выделение текста */
+::selection {
+    background-color: var(--md-accent-fg-color--transparent);
+    color: var(--md-default-fg-color);
+}
+
+/* Анимация для логотипа */
+.md-header__button.md-logo {
+    transition: transform 0.3s ease;
+}
+
+.md-header__button.md-logo:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* Улучшенные таблицы */
+.md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--md-shadow-z1);
+}
+
+/* Подсветка текущего раздела в навигации */
+.md-nav__link--active {
+    color: var(--md-accent-fg-color) !important;
+    font-weight: 600;
+}
+
+/* Градиент для шапки в темной теме */
+[data-md-color-scheme="slate"] .md-header {
+    background: linear-gradient(135deg, #0a0a1a 0%, #151530 100%);
+}
+
+/* Легкий градиент для светлой темы */
+[data-md-color-scheme="default"] .md-header {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* ==========================================================================
+   Адаптивные улучшения
+   ========================================================================== */
+
+@media screen and (max-width: 76.1875em) {
+    /* Мобильная навигация */
+    .md-nav--primary .md-nav__title {
+        background: var(--md-primary-fg-color);
+        color: white;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Отключение анимаций для пользователей */
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Улучшенная печать */
+@media print {
+    .md-typeset a {
+        color: #1e293b !important;
+        text-decoration: underline;
+    }
+    
+    .md-content {
+        color: #000 !important;
+        background: #fff !important;
+    }
+}
