@@ -78,3 +78,5 @@ plugins:
   - glightbox # создаёт масштабируемые галереи изображений из добавленных в статью проекта картинок
   - swagger-ui-tag
   - redoc-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml
