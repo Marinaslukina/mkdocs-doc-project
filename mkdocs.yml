@@ -48,8 +48,10 @@ nav: # Структура сайта
 - Навыки и инструменты: skills-and-tools.md
 - Примеры текстов:
   - Главная страница: pet-project/index.md
-  - Пример 1: pet-project/your-github-login-instruction.md
-  - Пример 2: pet-project/notsapp.md
+  - Отправка вложенных материалов в Telegram: pet-project/your-github-login-instruction.md
+  - Удаление заметки из приложения Нотсапп: pet-project/notsapp.md
+  - API документация Swagger: api/api-swagger.md
+  - API документация Redos: api/api-redoc.md
 - Контакты: contacts.md
 # - Домашний проект:
   # - pet-project/index.md # корневая страница подраздела; работает при включенной функции navigation.indexes
@@ -74,3 +76,5 @@ markdown_extensions: # Расширения markdown
 plugins:
   - search # Плагин для подключения поиска на портале
   - glightbox # создаёт масштабируемые галереи изображений из добавленных в статью проекта картинок
+  - swagger-ui-tag
+  - redoc-tag
