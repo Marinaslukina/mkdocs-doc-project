@@ -5,3 +5,5 @@
 3. [API документация Swagger](/docs/api/api-swagger.md)
 
 4. [API документация Redoc](/docs/api/api-redoc.md)
+
+5. [Инструкция по работе с LaTeX](/docs/pet-project/latex_instruction.md)

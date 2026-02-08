@@ -46,6 +46,7 @@ nav: # Структура сайта
   - Удаление заметки из приложения Нотсапп: pet-project/notsapp.md
   - API документация Swagger: api/api-swagger.md
   - API документация Redos: api/api-redoc.md
+  - Инструкция по работе с LaTeX: pet-project/latex_instruction.md
 - Контакты: contacts.md
 # - Домашний проект:
   # - pet-project/index.md # корневая страница подраздела; работает при включенной функции navigation.indexes
@@ -66,6 +67,8 @@ markdown_extensions: # Расширения markdown
   - pymdownx.emoji: # Иконки и эмодзи
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets:
+      base_path: docs
 
 plugins:
   - search # Плагин для подключения поиска на портале
@@ -74,6 +77,7 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml
+      
 
 extra_css:
   - stylesheets/extra.css
