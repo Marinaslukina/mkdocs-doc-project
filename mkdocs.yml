@@ -68,8 +68,7 @@ markdown_extensions: # Расширения markdown
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets:
-      base_path:
-      - docs
+      base_path: docs
 
 plugins:
   - search # Плагин для подключения поиска на портале
@@ -78,6 +77,7 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml
+      
 
 extra_css:
   - stylesheets/extra.css
