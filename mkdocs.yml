@@ -44,8 +44,8 @@ nav: # Структура сайта
   - Главная страница: pet-project/index.md
   - Отправка вложенных материалов в Telegram: pet-project/your-github-login-instruction.md
   - Удаление заметки из приложения Нотсапп: pet-project/notsapp.md
-  - API документация Swagger: api/api-swagger.md
-  - API документация Redos: api/api-redoc.md
+  - API документация Swagger: ./api/api-swagger.md
+  - API документация Redos: ./api/api-redoc.md
   - Инструкция по работе с LaTeX: pet-project/latex_instruction.md
 - Контакты: contacts.md
 # - Домашний проект:
