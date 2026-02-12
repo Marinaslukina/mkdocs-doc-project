@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Профессиональное портфолио" name="description"/>
+<link href="../../api/api-redoc/" rel="prev"/>
+<link href="../../contacts/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.1" name="generator"/>
+<title>Инструкция по работе с LaTeX - Марина Слукина, портфолио</title>
+<link href="../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../assets/mkdocs_puml/puml.css" rel="stylesheet"/>
+<link href="../../assets/mkdocs_puml/interaction.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+<body data-md-color-accent="indigo" data-md-color-primary="custom" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#latex">
+          Перейти к содержанию
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Верхний колонтитул" class="md-header__inner md-grid">
+<a aria-label="Марина Слукина, портфолио" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Марина Слукина, портфолио">
+<img alt="logo" src="../../images/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Марина Слукина, портфолио
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Инструкция по работе с LaTeX
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Выключить солнышко" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="custom" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Выключить солнышко">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Позвать солнышко" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="custom" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Позвать солнышко">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Поиск" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Поиск" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Поиск" class="md-search__options">
+<button aria-label="Очистить" class="md-search__icon md-icon" tabindex="-1" title="Очистить" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Вкладки" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+  
+    
+  
+  Главная страница
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../resume/">
+        
+  
+  
+    
+  
+  Резюме
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../projects/">
+        
+  
+  
+    
+  
+  Проекты
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../skills-and-tools/">
+        
+  
+  
+    
+  
+  Навыки и инструменты
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../">
+          
+  
+  
+    
+  
+  Примеры текстов
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../contacts/">
+        
+  
+  
+    
+  
+  Контакты
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Навигация" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Марина Слукина, портфолио" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Марина Слукина, портфолио">
+<img alt="logo" src="../../images/logo.png"/>
+</a>
+    Марина Слукина, портфолио
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    
+  
+    Главная страница
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resume/">
+<span class="md-ellipsis">
+    
+  
+    Резюме
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../projects/">
+<span class="md-ellipsis">
+    
+  
+    Проекты
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../skills-and-tools/">
+<span class="md-ellipsis">
+    
+  
+    Навыки и инструменты
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    
+  
+    Примеры текстов
+  
+
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Примеры текстов
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../your-github-login-instruction/">
+<span class="md-ellipsis">
+    
+  
+    Отправка вложенных материалов в Telegram
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../notsapp/">
+<span class="md-ellipsis">
+    
+  
+    Удаление заметки из приложения Нотсапп
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../api/api-swagger/">
+<span class="md-ellipsis">
+    
+  
+    API документация Swagger
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../api/api-redoc/">
+<span class="md-ellipsis">
+    
+  
+    API документация Redos
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Инструкция по работе с LaTeX
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Инструкция по работе с LaTeX
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        Структура документа
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        Подготовка файла с переменными данными
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        Сборка проекта
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        Основной текст документа
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../contacts/">
+<span class="md-ellipsis">
+    
+  
+    Контакты
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<nav aria-label="Навигация" class="md-path">
+<ol class="md-path__list">
+<li class="md-path__item">
+<a class="md-path__link" href="../..">
+<span class="md-ellipsis">
+    Главная страница
+  </span>
+</a>
+</li>
+<li class="md-path__item">
+<a class="md-path__link" href="../">
+<span class="md-ellipsis">
+    Примеры текстов
+  </span>
+</a>
+</li>
+</ol>
+</nav>
+<article class="md-content__inner md-typeset">
+<h1 id="latex">Инструкция по работе с LaTeX</h1>
+<p>Данная инструкция представляет собой пошаговую инструкцию по работе с LaTeX-шаблоном. Цель документа — стандартизация оформления текстовых материалов и максимальное упрощение процесса их создания для всех сотрудников, независимо от уровня владения LaTeX.</p>
+<p>В инструкции рассмотрены: базовая структура шаблона, порядок заполнения стандартных блоков (титульная страница, содержание, разделы). </p>
+<p>Для начала работы требуются только базовые навыки работы с текстовыми редакторами.</p>
+<h2 id="_1">Структура документа</h2>
+<ol>
+<li>
+<p>Для каждого нового <a href="" title="Отдельная папка, содержащая все исходные материалы и файлы, требуемые для генерации одного итогового документа">проекта</a> необходимо создать папку с наименованием проекта на английском языке, например, «OperatorManual». </p>
+</li>
+<li>
+<p>Далее в корневую папку вашего проекта необходимо скопировать предоставленный файл <strong>main.tex</strong>. Это главный файл, который управляет всем документом: в нём подключаются все остальные части (главы, стили оформления и прочее). </p>
+</li>
+<li>
+<p>В корневой папке следует создать подпапку <strong>img</strong>, в которой будут храниться все рисунки проекта.</p>
+</li>
+<li>
+<p>В корневой папке следует создать подпапку <strong>chapters</strong>. В данной подпапке будут лежать все главы документа, титульный лист, лист регистрации изменений, перечень принятых сокращений, введение.</p>
+</li>
+<li>
+<p>В подпапку <strong>chapters</strong> необходимо скопировать предоставленные файлы: </p>
+<ul>
+<li><strong>titel.tex</strong> – для формирования титульного листа документа;</li>
+<li><strong>abbreviations.tex</strong> – для создания перечня сокращений;</li>
+<li><strong>list.tex</strong> – для создания листа регистрации изменений.</li>
+</ul>
+</li>
+<li>
+<p>В корневой папке следует создать подпапку <strong>variables</strong>. В данную подпапку необходимо скопировать предоставленный файл <strong>var.tex</strong>. Данный файл содержит информацию для заполнения полей основного документа: децимальный номер изделия, код документа, вид документа, инвентарный номер, литера, год и т.д. Заполнение данного файла обязательно и будет указано ниже.</p>
+</li>
+<li>
+<p>Файл <strong>preample.tex</strong> содержит стилевые настройки для документа и не должен изменяться разработчиком. Данный файл необходимо скопировать в основную папку проекта.</p>
+</li>
+<li>
+<p>Файл <strong>list.tex</strong> содержит таблицу для создания листа регистрации изменений и не должен изменяться разработчиком.</p>
+</li>
+</ol>
+<h2 id="_2">Подготовка файла с переменными данными</h2>
+<ol>
+<li>
+<p>Перед началом разработки необходимо заполнить файл с переменными данными – <strong>var.tex</strong>, находящийся в подпапке <strong>variables</strong>.</p>
+</li>
+<li>
+<p>Файл содержит следующий набор полей, значения которых следует указать:</p>
+<ul>
+<li>
+<p>наименование организации
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>\newcommand{\CompanyName}{ООО «Рога и копыта»}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>наименование программы
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>\newcommand{\ProductName}{Программный комплекс}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>децимальный номер программы
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>\newcommand{\ProductDocNumber}{АБВГ.12345-01}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>код документа
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>\newcommand{\DocNumber}{34 01}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>вид документа
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>\newcommand{\DocType}{Руководство оператора}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>при наличии части документа указать часть (с маленькой буквы!), при отсутствии – поставить пробел 
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>\newcommand{\DocPart}{часть 1}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>год создания документа
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>\newcommand{\DocDate}{2025}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>при наличии литеры указать ее, при отсутствии – поставить пробел
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>\newcommand{\DocLiter}{О}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>при наличии инвентарного номера указать, при отсутствии – поставить пробел
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>\newcommand{\DocInventoryNumber}{11111}
+</code></pre></div><p></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Данные, указанные в файле с переменными данными, автоматически будут заполнены на титульном листе и колонтитулах. </p>
+</li>
+<li>
+<p>При необходимости использовать значения переменных данных в тексте документа следует вместо значения указать его поле. Таким образом, при изменении значения в файле <strong>var.tex</strong> оно изменится во всем документе.</p>
+</li>
+</ol>
+<h2 id="_3">Сборка проекта</h2>
+<ol>
+<li>
+<p>Сборка проекта осуществляется в файле <strong>main.tex</strong>.</p>
+</li>
+<li>
+<p>В данном файле осуществляется подключение всех вспомогательных файлов, которые составляют документ, в том порядке, в котором они должны быть расположены в документе. </p>
+</li>
+<li>
+<p>Файл уже содержит все основные команды для работы. Однако, список, наименование и порядок вспомогательных файлов может быть изменен разработчиком. Поэтому ниже приведено описание команд файла. </p>
+</li>
+<li>
+<p>В файле необходимо найти следующие команды, отмечающие начало и конец основного содержания документа: </p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>\begin{document}  
+<a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>&lt;текст&gt;
+<a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>\end{document}
+</code></pre></div>
+<p>Все, что находится между ними будет считаться частью основного текста документа.</p>
+<p>Далее, в этом разделе, речь пойдет о командах, которые следует записывать между началом и концом документа.</p>
+</li>
+<li>
+<p>Для подключения вспомогательного файла следует использовать следующую команду, где в фигурных скобках указывается путь до файла
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>\include{chapters/titel}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для создания новой страницы (разрыва страницы) необходимо использовать команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>\newpage
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для создания содержания следует использовать ряд команд
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>\renewcommand{\contentsname}{}
+<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>\renewcommand{\cfttoctitlefont}{}
+<a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a>\mytableofcontents
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для создания перечня сокращений следует использовать команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>\include{chapters/abbreviations}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для создания листа регистрации изменений следует использовать команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>\include{chapters/list}
+</code></pre></div><p></p>
+</li>
+</ol>
+<h2 id="_4">Основной текст документа</h2>
+<ol>
+<li>
+<p>Необходимо разделить содержимое документа на отдельные файлы, где каждая глава документа хранится в своем собственном файле. При большом объеме допускается делить на разделы. </p>
+</li>
+<li>
+<p>Наименование каждого файла должно состоять из английских букв, за которыми следует точка и расширение <strong>.tex</strong>. Например, «Introduction.tex», «Chapter1.tex» и т.д. </p>
+</li>
+<li>
+<p>Чтобы вставить наименование главы, необходимо использовать следующую команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>\chapter{Наименование главы}
+</code></pre></div><p></p>
+<blockquote>
+<p>Пример:</p>
+<p>1 НАИМЕНОВАНИЕ ГЛАВЫ</p>
+</blockquote>
+</li>
+<li>
+<p>Чтобы вставить наименование раздела, необходимо использовать следующую команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>\section{Наименование раздела}
+</code></pre></div><p></p>
+<blockquote>
+<p>Пример:</p>
+<p>2.1 Наименование раздела</p>
+</blockquote>
+</li>
+<li>
+<p>Чтобы вставить наименование пункта, необходимо использовать следующую команду 
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>\subsection{Наименование пункта}
+</code></pre></div><p></p>
+<blockquote>
+<p>Пример:</p>
+<p>2.1.1 Наименование пункта</p>
+</blockquote>
+</li>
+<li>
+<p>Чтобы вставить наименование подпункта, необходимо использовать следующую команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>\subsubsection{Наименование подпункта}
+</code></pre></div><p></p>
+<blockquote>
+<p>Пример:</p>
+<p>3.1.4.2 Наименование подпункта</p>
+</blockquote>
+</li>
+<li>
+<p>Чтобы создать ненумерованный заголовок, включенный в содержание, необходимо:</p>
+<p>– для главы использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>\notnumberchapter{Название главы}
+</code></pre></div><p></p>
+<p>– для раздела использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>\notnumbersection{Название раздела}
+</code></pre></div><p></p>
+<p>– для пункта использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>\notnumbersubsection{Название пункта}
+</code></pre></div><p></p>
+<p>– для подпункта использовать команду 
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a>\notnumbersubsubsection{Название подпункта}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Чтобы создать нумерованный заголовок, не включенный в содержание, необходимо:</p>
+<p>– для главы использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a>\notocchapter{Название главы}
+</code></pre></div><p></p>
+<p>– для раздела использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a>\notocsection{Название раздела}
+</code></pre></div><p></p>
+<p>– для пункта использовать команду
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a>\notocsubsection{Название пункта}
+</code></pre></div><p></p>
+<p>– для подпункта использовать команду 
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a>\notocsubsubsection{Название подпункта}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Чтобы вставить рисунок в содержимое текста, необходимо:</p>
+<ul>
+<li>сохранить рисунок в папку <strong>img</strong>;</li>
+<li>в тексте указать следующий код
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a>\begin{figure}[H]
+<a href="#__codelineno-27-2" id="__codelineno-27-2" name="__codelineno-27-2"></a>\centering
+<a href="#__codelineno-27-3" id="__codelineno-27-3" name="__codelineno-27-3"></a>\includegraphics[width=0.5\textwidth]{рисунок 14}
+<a href="#__codelineno-27-4" id="__codelineno-27-4" name="__codelineno-27-4"></a>\caption{Пример отображения рисунка}
+<a href="#__codelineno-27-5" id="__codelineno-27-5" name="__codelineno-27-5"></a>\label{fig:fig_14}
+<a href="#__codelineno-27-6" id="__codelineno-27-6" name="__codelineno-27-6"></a>\end{figure}
+</code></pre></div></li>
+</ul>
+<p>Поле <strong>\includegraphics</strong> в фигурных скобках {} должно содержать наименование рисунка без указания расширения. </p>
+<p>Поле <strong>\caption</strong> в фигурных скобках {} должно содержать подпись к изображению.</p>
+<p>Поле <strong>\label</strong> в фигурных скобках {} после значения <strong>fig:</strong> должно содержать произвольную метку, состоящую из английских букв и цифр. Данная метка будет использована для ссылки на изображение. </p>
+</li>
+<li>
+<p>Чтобы вставить ссылку на изображение в документе, необходимо использовать команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a>\ref{fig:fig_1}
+</code></pre></div><p></p>
+<p>Данная команда в фигурных скобках {} после значения <strong>fig:</strong> содержит метку из поля <strong>\label</strong>.</p>
+</li>
+<li>
+<p>Чтобы вставить ненумерованный список с маркером (–), необходимо в текст вставить следующий код:
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a>\begin{itemize}
+<a href="#__codelineno-29-2" id="__codelineno-29-2" name="__codelineno-29-2"></a>    \item текст перечисления 1;
+<a href="#__codelineno-29-3" id="__codelineno-29-3" name="__codelineno-29-3"></a>    \item текст перечисления 2.
+<a href="#__codelineno-29-4" id="__codelineno-29-4" name="__codelineno-29-4"></a>\end{itemize}
+</code></pre></div><p></p>
+<p>Поле <strong>\item</strong> указывает на элемент списка. </p>
+</li>
+<li>
+<p>Чтобы вставить нумерованный список с маркером 1), необходимо в текст вставить следующий код:
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-30-1" id="__codelineno-30-1" name="__codelineno-30-1"></a>\begin{enumerate}
+<a href="#__codelineno-30-2" id="__codelineno-30-2" name="__codelineno-30-2"></a>    \item текст перечисления 1;
+<a href="#__codelineno-30-3" id="__codelineno-30-3" name="__codelineno-30-3"></a>    \item текст перечисления 1.
+<a href="#__codelineno-30-4" id="__codelineno-30-4" name="__codelineno-30-4"></a>\end{enumerate}
+</code></pre></div><p></p>
+<p>Поле <strong>\item</strong> указывает на элемент списка.</p>
+</li>
+<li>
+<p>Для вставки неразрывного пробела необходимо использовать символ «~».</p>
+</li>
+<li>
+<p>Для вставки знака процента необходимо использовать сочетание символов «\%».</p>
+</li>
+<li>
+<p>Чтобы вставить длинное тире «–» необходимо использовать набор символов «--».</p>
+</li>
+<li>
+<p>Чтобы изменить начертание текста на жирное, необходимо использовать команду 
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a>\textbf{Текст жирным шрифтом}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для вставки сноски необходимо использовать команду
+    </p><div class="highlight"><pre><span></span><code><a href="#__codelineno-32-1" id="__codelineno-32-1" name="__codelineno-32-1"></a>\footnote{Текст сноски}
+</code></pre></div><p></p>
+</li>
+<li>
+<p>Для вставки иконки в текст следует: </p>
+<ul>
+<li>сохранить иконку в папку img;</li>
+<li>в тексте указать следующий код
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-33-1" id="__codelineno-33-1" name="__codelineno-33-1"></a>\includegraphics[width=0.5cm]{Наименование иконки}
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Вставка таблицы, размещенной на одном листе</p>
+<ul>
+<li>Чтобы создать таблицу и определить ее окружение, следует использовать команды:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-34-1" id="__codelineno-34-1" name="__codelineno-34-1"></a>\begin{table}[H]
+<a href="#__codelineno-34-2" id="__codelineno-34-2" name="__codelineno-34-2"></a>&lt;текст&gt;
+<a href="#__codelineno-34-3" id="__codelineno-34-3" name="__codelineno-34-3"></a>\end{table}
+</code></pre></div>
+<p>Указанные ниже команды должны быть записаны внутри окружения.</p>
+<ul>
+<li>Для настройки и создания подписи к таблице следует вставить:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-35-1" id="__codelineno-35-1" name="__codelineno-35-1"></a>\captionsetup{
+<a href="#__codelineno-35-2" id="__codelineno-35-2" name="__codelineno-35-2"></a>    format=razryadka,
+<a href="#__codelineno-35-3" id="__codelineno-35-3" name="__codelineno-35-3"></a>    justification=raggedright,
+<a href="#__codelineno-35-4" id="__codelineno-35-4" name="__codelineno-35-4"></a>    singlelinecheck=false, 
+<a href="#__codelineno-35-5" id="__codelineno-35-5" name="__codelineno-35-5"></a>    labelsep=endash,
+<a href="#__codelineno-35-6" id="__codelineno-35-6" name="__codelineno-35-6"></a>}
+<a href="#__codelineno-35-7" id="__codelineno-35-7" name="__codelineno-35-7"></a>\caption{Название таблицы 1}
+</code></pre></div>
+<p>Поле <strong>\caption</strong> в фигурных скобках {} содержит наименование таблицы.</p>
+<ul>
+<li>Для создания ссылки на таблицу необходимо добавить: </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-36-1" id="__codelineno-36-1" name="__codelineno-36-1"></a>\label{tab:table_1}
+</code></pre></div>
+<p>Поле <strong>\labe</strong>l в фигурных скобках {} после значения <strong>tab:</strong> должно содержать произвольную метку, состоящую из английских букв и цифр. Данная метка будет использована для ссылки на таблицу.</p>
+<ul>
+<li>Для создания таблицы необходимо указать команды начала и конца таблицы:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-37-1" id="__codelineno-37-1" name="__codelineno-37-1"></a>\begin{tabularx}
+<a href="#__codelineno-37-2" id="__codelineno-37-2" name="__codelineno-37-2"></a>&lt;текст&gt;
+<a href="#__codelineno-37-3" id="__codelineno-37-3" name="__codelineno-37-3"></a>\end{tabularx}
+</code></pre></div>
+<ul>
+<li>Для настройки ширины колонок следует добавить:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-38-1" id="__codelineno-38-1" name="__codelineno-38-1"></a>\begin{tabularx}{\textwidth}{
+<a href="#__codelineno-38-2" id="__codelineno-38-2" name="__codelineno-38-2"></a>    |&gt;{\raggedright\arraybackslash}p{3.4cm}
+<a href="#__codelineno-38-3" id="__codelineno-38-3" name="__codelineno-38-3"></a>    |&gt;{\raggedright\arraybackslash}p{4.4cm}
+<a href="#__codelineno-38-4" id="__codelineno-38-4" name="__codelineno-38-4"></a>    |&gt;{\centering\arraybackslash}p{1.5cm}
+<a href="#__codelineno-38-5" id="__codelineno-38-5" name="__codelineno-38-5"></a>    |&gt;{\centering\arraybackslash}p{3cm}
+<a href="#__codelineno-38-6" id="__codelineno-38-6" name="__codelineno-38-6"></a>    |&gt;{\centering\arraybackslash}X|
+<a href="#__codelineno-38-7" id="__codelineno-38-7" name="__codelineno-38-7"></a>}
+</code></pre></div>
+<p><strong>«|»</strong> – вертикальная линия (граница колонки);</p>
+<p><strong>«&gt;{}»</strong> – модификатор для установки стиля содержимого колонки;</p>
+<p><strong>«\raggedright»</strong> – выравнивание текста по левому краю;</p>
+<p><strong>«\centering»</strong> – выравнивание текста по центру;</p>
+<p><strong>«\arraybackslash»</strong> – позволяет использовать знак «\» переноса;</p>
+<p><strong>«p{3.4cm}»</strong> – задана фиксированная ширина колонки 3,4 см;</p>
+<p><strong>«X»</strong> – автоматическая ширина колонки (растягивается на все доступное пространство).</p>
+<p>В примере выше определены пять колонок, четыре из которых имеют фиксированную ширину, а последняя заполняет оставшееся пространство до края листа.</p>
+<ul>
+<li>Для создания горизонтальной линии следует использовать команду</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-39-1" id="__codelineno-39-1" name="__codelineno-39-1"></a>\hline
+</code></pre></div>
+<ul>
+<li>
+<p>Для разделения столбцов между собой используется символ «&amp;», для разделения строк – «\».</p>
+</li>
+<li>
+<p>Для создания заголовка таблицы используется команда <strong>\makecell{}</strong>. Внутри фигурных скобок указывается название заголовка. Чтобы сделать переносы внутри слова, необходимо использовать символ «\».</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-40-1" id="__codelineno-40-1" name="__codelineno-40-1"></a>\makecell{Обозначение} &amp; 
+<a href="#__codelineno-40-2" id="__codelineno-40-2" name="__codelineno-40-2"></a>\makecell{Наименование} &amp; 
+<a href="#__codelineno-40-3" id="__codelineno-40-3" name="__codelineno-40-3"></a>\makecell{Коли-\\чество} &amp; 
+<a href="#__codelineno-40-4" id="__codelineno-40-4" name="__codelineno-40-4"></a>\makecell{Порядковый\\учетный\\номер} &amp; 
+<a href="#__codelineno-40-5" id="__codelineno-40-5" name="__codelineno-40-5"></a>\makecell{Примечание} \\ \hline\hline
+</code></pre></div>
+<ul>
+<li>Пример создания основного содержимого таблицы</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-41-1" id="__codelineno-41-1" name="__codelineno-41-1"></a>АБВГ.12345-01 20 01 &amp; Ведомость эксплуатационных документов &amp; 1 &amp; 123 &amp; * \\ \hline
+</code></pre></div>
+<ul>
+<li>Пример таблицы</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-42-1" id="__codelineno-42-1" name="__codelineno-42-1"></a>\begin{table}[H]
+<a href="#__codelineno-42-2" id="__codelineno-42-2" name="__codelineno-42-2"></a>\captionsetup{
+<a href="#__codelineno-42-3" id="__codelineno-42-3" name="__codelineno-42-3"></a>    format=razryadka,
+<a href="#__codelineno-42-4" id="__codelineno-42-4" name="__codelineno-42-4"></a>    justification=raggedright,
+<a href="#__codelineno-42-5" id="__codelineno-42-5" name="__codelineno-42-5"></a>    singlelinecheck=false, 
+<a href="#__codelineno-42-6" id="__codelineno-42-6" name="__codelineno-42-6"></a>    labelsep=endash,
+<a href="#__codelineno-42-7" id="__codelineno-42-7" name="__codelineno-42-7"></a>    }
+<a href="#__codelineno-42-8" id="__codelineno-42-8" name="__codelineno-42-8"></a>\caption{Н\hspace{2pt}а\hspace{2pt}з\hspace{2pt}в\hspace{2pt}а\hspace{2pt}н\hspace{2pt}и\hspace{2pt}е \hspace{2pt}т\hspace{2pt}а\hspace{2pt}б\hspace{2pt}л\hspace{2pt}и\hspace{2pt}ц\hspace{2pt}ы\hspace{2pt} 1}
+<a href="#__codelineno-42-9" id="__codelineno-42-9" name="__codelineno-42-9"></a>\label{tab:table_1}
+<a href="#__codelineno-42-10" id="__codelineno-42-10" name="__codelineno-42-10"></a>\begin{tabularx}{\textwidth}{
+<a href="#__codelineno-42-11" id="__codelineno-42-11" name="__codelineno-42-11"></a>    |&gt;{\raggedright\arraybackslash}p{3.4cm}% вертикальная линия (граница колонки)
+<a href="#__codelineno-42-12" id="__codelineno-42-12" name="__codelineno-42-12"></a>    |&gt;{\raggedright\arraybackslash}p{4.4cm}%Х-колонка с автоматической шириной (растягивается)
+<a href="#__codelineno-42-13" id="__codelineno-42-13" name="__codelineno-42-13"></a>    |&gt;{\centering\arraybackslash}p{1.5cm}
+<a href="#__codelineno-42-14" id="__codelineno-42-14" name="__codelineno-42-14"></a>    |&gt;{\centering\arraybackslash}p{3cm}%автоматическая ширина, текст слева
+<a href="#__codelineno-42-15" id="__codelineno-42-15" name="__codelineno-42-15"></a>    |&gt;{\centering\arraybackslash}X|
+<a href="#__codelineno-42-16" id="__codelineno-42-16" name="__codelineno-42-16"></a>}
+<a href="#__codelineno-42-17" id="__codelineno-42-17" name="__codelineno-42-17"></a>\hline
+<a href="#__codelineno-42-18" id="__codelineno-42-18" name="__codelineno-42-18"></a>\makecell{Обозначение} &amp; \makecell{Наименование} &amp; \makecell{Коли-\\чество} &amp; \makecell{Порядковый\\учетный\\номер} &amp; \makecell{Примечание} \\ \hline\hline
+<a href="#__codelineno-42-19" id="__codelineno-42-19" name="__codelineno-42-19"></a>АБВГ.12345-01 20 01 &amp; Ведомость эксплуатационных документов &amp; 1 &amp; 123 &amp; * \\ \hline
+<a href="#__codelineno-42-20" id="__codelineno-42-20" name="__codelineno-42-20"></a>АБВГ.12345-01 34 01 &amp; Руководство оператора &amp; 2 &amp; 456 &amp; ** \\ \hline
+<a href="#__codelineno-42-21" id="__codelineno-42-21" name="__codelineno-42-21"></a>АБВГ.12345-01 96 01 &amp; Комплект эксплуатационной документации &amp; 3 &amp; 789 &amp; \textsuperscript{**} \\ \hline
+<a href="#__codelineno-42-22" id="__codelineno-42-22" name="__codelineno-42-22"></a>\end{tabularx}
+<a href="#__codelineno-42-23" id="__codelineno-42-23" name="__codelineno-42-23"></a>\end{table}
+</code></pre></div>
+</li>
+</ol>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.path", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "toc.integrate", "navigation.instant", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../assets/mkdocs_puml/puml.js"></script>
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script src="../../assets/mkdocs_puml/interaction.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script><script>document$.subscribe(() => {
+            const dark_scheme_name = "slate"
+            
+            window.scheme = document.body.getAttribute("data-md-color-scheme")
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("redoc-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script></body></html>
